@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Viewing Profile"
+        android:textSize="25dp"
+        android:textColor="@color/textColor"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentLeft="true"
+        android:textAlignment="center"
+        android:id="@+id/titleView"
+        android:layout_alignParentTop="true"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="John Doe"
+        android:textSize="17dp"
+        android:textColor="@color/subtextColor"
+        android:layout_below="@+id/titleView"
+        android:textAlignment="center"
+        android:id="@+id/subView"
+        android:layout_marginBottom="10dp"
+        />
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/subBackgroundColor"
+        android:id="@+id/profileImageView"
+        android:layout_below="@+id/subView"
+        android:layout_centerHorizontal="true"
+        />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/contentListView"
+        android:layout_below="@+id/profileImageView"></ListView>
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/spiderChart"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/contentListView"
+        android:layout_above="@+id/addToFavorites"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/buttonColor"
+
+        android:id="@+id/addToFavorites"
+        android:textColor="@color/buttonTextColor"
+        android:shadowColor="#000000"
+        android:shadowRadius="2"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:text="Add To Favorites"
+        android:padding="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

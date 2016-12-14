@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/subBackgroundColor">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/jobseekerImageView"
+        ></ImageView>
+    <LinearLayout
+        android:layout_centerVertical="true"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_toEndOf="@+id/jobseekerImageView"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="First Name and Last Name"
+            android:id="@+id/firstAndLastTextView"
+            android:textColor="@color/textColor"
+            android:textSize="16dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Skills"
+            android:id="@+id/skillsTextView"
+            android:textColor="@color/subtextColor"
+            android:textSize="14dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

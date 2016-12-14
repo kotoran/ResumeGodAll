@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Let's get you a job."
+        android:textSize="25dp"
+        android:textColor="@color/textColor"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentLeft="true"
+        android:textAlignment="center"
+        android:id="@+id/titleView"
+        android:layout_alignParentTop="true"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Some money would do you good."
+        android:textSize="17dp"
+        android:textColor="@color/subtextColor"
+        android:layout_below="@+id/titleView"
+        android:textAlignment="center"
+        android:id="@+id/subView"
+        android:layout_marginBottom="10dp"
+        />
+    <ListView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:layout_below="@+id/subView"
+        android:layout_above="@+id/submitButton"
+        android:id="@+id/contentListView"
+        android:background="@color/subBackgroundColor"></ListView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/buttonColor"
+
+        android:id="@+id/submitButton"
+        android:textColor="@color/buttonTextColor"
+        android:shadowColor="#000000"
+        android:shadowRadius="2"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:text="Submit"
+        android:padding="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
